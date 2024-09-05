@@ -1,5 +1,11 @@
+import Numtify from "./components/Numtify";
+
 function App() {
-  return <></>;
+  return (
+    <>
+      <Numtify />
+    </>
+  );
 }
 
 export default App;
