@@ -1,9 +1,9 @@
-import Numtify from "./components/Numtify";
+import Layout from "./pages/Layout";
 
 function App() {
   return (
     <>
-      <Numtify />
+      <Layout />
     </>
   );
 }
