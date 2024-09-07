@@ -27,7 +27,7 @@ export default function Nav() {
             </div>
             <NavLink
               to="/"
-              className=" mr-10 text-blue-600 font-semibold px-9 py-2 rounded-md"
+              className=" mr-10 text-blue-600 font-medium px-9 py-2 rounded-md"
             >
               Logout
             </NavLink>
@@ -52,30 +52,30 @@ export default function Nav() {
             className="md:hidden absolute bg-white right-0 w-1/2 text-center pt-28 font-medium h-screen  top-0 space-y-5
         "
           >
-            <a
-              href="/about"
+            <NavLink
+              to="/user"
               className="block px-2 py-2 text-sm hover:bg-blue-500 hover:text-white"
             >
               Order Number
-            </a>
-            <a
-              href="/services"
+            </NavLink>
+            <NavLink
+              to="orders"
               className="block px-2 py-2 text-sm hover:bg-blue-500  hover:text-white"
             >
               View Orders
-            </a>
-            <a
-              href="/contact"
+            </NavLink>
+            <NavLink
+              to="addfunds"
               className="block px-2 py-2 text-sm hover:bg-blue-500  hover:text-white"
             >
               Add funds
-            </a>
-            <a
-              href="/contact"
+            </NavLink>
+            <NavLink
+              to="account"
               className="block px-2 py-2 text-sm hover:bg-blue-500  hover:text-white"
             >
               Account
-            </a>
+            </NavLink>
             <NavLink
               to="/"
               className="block px-2 py-2 text-sm hover:bg-blue-500  hover:text-white"
