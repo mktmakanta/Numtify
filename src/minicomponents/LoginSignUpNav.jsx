@@ -1,17 +1,18 @@
 import React from "react";
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 import CloseIcon from "../minicomponents/CloseIcon";
 import HambugerIcon from "../minicomponents/HambugerIcon";
-import { NavLink } from "react-router-dom";
 
-export default function Nav() {
+export default function LoginSignUpNav() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
   return (
-    <header className=" bg-blue-50 text-black font-raleway font-medium sticky top-0">
+    <>
       <nav className="max-w-8xl mx-auto px-6 ">
         <div className="flex justify-between items-center h-20">
           <div className="w-28 h-full">
@@ -21,22 +22,22 @@ export default function Nav() {
               alt="Numtify logo"
             />
           </div>
-          <div className="hidden md:flex gap-12 items-center">
-            <div className=" bg-blue-500 text-white h-full px-12 py-7">
-              NGN 857
-            </div>
+          <div className="hidden md:flex gap-20 items-center">
+            <a href="/" className="">
+              Contact Us
+            </a>
+            <NavLink to="/login" className="">
+              Login
+            </NavLink>
             <NavLink
-              to="/"
-              className=" mr-10 text-blue-600 font-semibold px-9 py-2 rounded-md"
+              to="/signup"
+              className=" mr-10 bg-blue-600 text-white px-9 py-2 rounded-md"
             >
-              Logout
+              Sign Up
             </NavLink>
           </div>
 
           <div className="md:hidden flex items-center z-30">
-            <div className=" bg-blue-500 text-white h-full px-6 py-7 mr-4">
-              NGN 857
-            </div>
             <button onClick={toggleMenu}>
               {isOpen ? (
                 <CloseIcon className="text-2xl" />
@@ -47,44 +48,33 @@ export default function Nav() {
           </div>
         </div>
 
+        {/* mobile */}
         {isOpen && (
           <div
-            className="md:hidden absolute bg-white right-0 w-1/2 text-center pt-28 font-medium h-screen  top-0 space-y-5
-        "
+            className="md:hidden absolute bg-white right-0 w-1/2 text-center pt-28 font-medium h-full  top-0 space-y-5
+            "
           >
             <a
               href="/about"
               className="block px-2 py-2 text-sm hover:bg-blue-500 hover:text-white"
             >
-              Order Number
-            </a>
-            <a
-              href="/services"
-              className="block px-2 py-2 text-sm hover:bg-blue-500  hover:text-white"
-            >
-              View Orders
-            </a>
-            <a
-              href="/contact"
-              className="block px-2 py-2 text-sm hover:bg-blue-500  hover:text-white"
-            >
-              Add funds
-            </a>
-            <a
-              href="/contact"
-              className="block px-2 py-2 text-sm hover:bg-blue-500  hover:text-white"
-            >
-              Account
+              Contact Us
             </a>
             <NavLink
-              to="/"
+              to="login"
               className="block px-2 py-2 text-sm hover:bg-blue-500  hover:text-white"
             >
-              Logout
+              Login
+            </NavLink>
+            <NavLink
+              to="signup"
+              className="block px-2 py-2 text-sm hover:bg-blue-500  hover:text-white"
+            >
+              Sign Up
             </NavLink>
           </div>
         )}
       </nav>
-    </header>
+    </>
   );
 }

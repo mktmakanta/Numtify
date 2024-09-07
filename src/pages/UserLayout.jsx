@@ -7,10 +7,14 @@ export default function UserLayout() {
   return (
     <>
       <Nav />
-      <div className=" lg:grid grid-cols-6">
-        <Sidebar />
-        <Outlet />
-      </div>
+      <section className=" md:grid grid-cols-10 bg-sky-100 h-screen ">
+        <div className="hidden md:block   lg:col-span-2">
+          <Sidebar />
+        </div>
+        <main className="md:col-span-8 p-5  overflow-y-scroll  ">
+          <Outlet />
+        </main>
+      </section>
     </>
   );
 }

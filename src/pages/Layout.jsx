@@ -24,12 +24,13 @@ export default function Layout() {
       path: "signup",
       element: <SignUp />,
     },
+
     {
       path: "user",
       element: <UserLayout />,
       children: [
         {
-          path: "neworders",
+          index: true,
           element: <NewOrders />,
         },
         {

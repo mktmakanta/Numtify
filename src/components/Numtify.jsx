@@ -4,6 +4,7 @@ import HambugerIcon from "../minicomponents/HambugerIcon";
 import HeroServices from "../minicomponents/HeroServices";
 import GetStarted from "./GetStarted";
 import Footer from "../minicomponents/Footer";
+import { NavLink } from "react-router-dom";
 
 export default function Numtify() {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,15 +28,15 @@ export default function Numtify() {
               <a href="/" className="">
                 Contact Us
               </a>
-              <a href="/about" className="">
+              <NavLink to="login" className="">
                 Login
-              </a>
-              <a
-                href="/services"
+              </NavLink>
+              <NavLink
+                to="signup"
                 className=" mr-10 bg-blue-600 text-white px-9 py-2 rounded-md"
               >
                 Sign Up
-              </a>
+              </NavLink>
             </div>
 
             <div className="md:hidden flex items-center z-30">
@@ -49,6 +50,7 @@ export default function Numtify() {
             </div>
           </div>
 
+          {/* mobile */}
           {isOpen && (
             <div
               className="md:hidden absolute bg-white right-0 w-1/2 text-center pt-28 font-medium h-full  top-0 space-y-5
@@ -60,22 +62,23 @@ export default function Numtify() {
               >
                 Contact Us
               </a>
-              <a
-                href="/services"
+              <NavLink
+                to="login"
                 className="block px-2 py-2 text-sm hover:bg-blue-500  hover:text-white"
               >
                 Login
-              </a>
-              <a
-                href="/contact"
+              </NavLink>
+              <NavLink
+                to="signup"
                 className="block px-2 py-2 text-sm hover:bg-blue-500  hover:text-white"
               >
                 Sign Up
-              </a>
+              </NavLink>
             </div>
           )}
         </nav>
 
+        {/* hero  */}
         <section className="p-4 pt-14 ">
           <div className="hero-description">
             <h1 className="text-6xl font-bold leading-snug ">
