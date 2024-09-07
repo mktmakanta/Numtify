@@ -49,7 +49,7 @@ export default function NewOrdersComp() {
   };
 
   return (
-    <div className="w-full mt-0 lg:mt-8 p-6 bg-gray-100 rounded-md shadow-md font-raleway">
+    <div className="w-full mt-8 p-6 bg-gray-100 rounded-md shadow-md font-raleway">
       <div className="text-red-600 text-sm font-light mt-3 mb-5">
         Search for a service in the search box
       </div>
@@ -59,7 +59,7 @@ export default function NewOrdersComp() {
           <select
             value={selectedService}
             onChange={handleServiceChange}
-            className="w-full px-3 py-3.5  rounded-md"
+            className="w-full px-3 py-3.5 focus:outline outline-blue-600  rounded-md"
           >
             <option
               className="text-sm font-thin"
@@ -83,7 +83,7 @@ export default function NewOrdersComp() {
           <select
             value={selectedCountry}
             onChange={handleCountryChange}
-            className="w-full px-3 py-3.5 border rounded-md"
+            className="w-full px-3 py-3.5 focus:outline  outline-blue-600 rounded-md"
           >
             <option
               className="text-sm font-thin"

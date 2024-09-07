@@ -9,6 +9,7 @@ import AddFunds from "./AddFunds";
 import Orders from "./Orders";
 import NewOrders from "./NewOrders";
 import SignUp from "./SignUp";
+import OrderDetails from "./OrderDetails";
 
 export default function Layout() {
   const router = createBrowserRouter([
@@ -37,6 +38,11 @@ export default function Layout() {
           path: "orders",
           element: <Orders />,
         },
+        {
+          path: "orders/:details",
+          element: <OrderDetails />,
+        },
+
         {
           path: "addfunds",
           element: <AddFunds />,
