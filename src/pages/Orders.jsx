@@ -5,32 +5,37 @@ import { NavLink } from "react-router-dom";
 export default function Orders() {
   return (
     <section className="font-raleway mt-7">
-      <div>
-        <ul className="bg-blue-500 text-white font-bold flex justify-evenly rounded-t-lg py-2">
-          <li>ID</li>
-          <li>Service</li>
-          <li>Number</li>
-        </ul>
-        <div className="bg-white divide-neutral-200 divide-y font-normal pb-5">
-          {orders.map((order, index) => (
-            <ul
-              key={index}
-              className="grid grid-cols-3 py-3 justify-center px-3    "
-            >
-              <li className="justify-self-center">{order.id} </li>
-              <li className="justify-self-center text-wrap">{order.service}</li>
-              <li className="justify-self-end space-x-20">
-                <span>{order.number} </span>
-                <NavLink
-                  to={`/user/orders/${order.id}`}
-                  className=" h-5 py-2 px-4 rounded-md font-semibold bg-blue-500 text-white"
-                >
-                  View
-                </NavLink>{" "}
-              </li>
-            </ul>
-          ))}
-        </div>
+      <div class="overflow-x-auto">
+        <table class="min-w-full table-auto bg-white shadow-md rounded-lg">
+          <thead class="bg-blue-500 text-white rounded-lg">
+            <tr>
+              <th class="px-4 py-2">ID</th>
+              <th class="px-4 py-2">Service</th>
+              <th class="px-4 py-2">Number</th>
+              <th class=" ,rounded-lg px-4 py-2"></th>
+            </tr>
+          </thead>
+          <tbody>
+            {orders.map((order, index) => (
+              <tr
+                key={index}
+                class=" text-center divide-y odd:bg-white even:bg-slate-50 "
+              >
+                <td class="pl-4 py-2">{order.id}</td>
+                <td class=" p-2">{order.service}</td>
+                <td class=" p-2">{order.number}</td>
+                <td class="pr-3 py-2">
+                  <NavLink
+                    to={`/user/orders/${order.id}`}
+                    className=" inline-block rounded-md px-5 py-2 bg-blue-500 text-white"
+                  >
+                    View
+                  </NavLink>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
     </section>
   );

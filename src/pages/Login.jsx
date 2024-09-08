@@ -37,7 +37,7 @@ export default function Login() {
               name="username"
               value={formData.username}
               onChange={handleInputChange}
-              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none hover:ring-1 focus:ring-2 focus:ring-blue-400"
+              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none hover:ring-1 focus:ring-1 focus:ring-blue-400"
               required
             />
           </div>
@@ -49,7 +49,7 @@ export default function Login() {
               name="password"
               value={formData.password}
               onChange={handleInputChange}
-              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none hover:ring-1 focus:ring-2 focus:ring-blue-400"
+              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none hover:ring-1 focus:ring-1 focus:ring-blue-400"
               required
             />
           </div>

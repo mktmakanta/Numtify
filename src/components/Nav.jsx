@@ -11,7 +11,7 @@ export default function Nav() {
     setIsOpen(!isOpen);
   };
   return (
-    <header className=" bg-blue-50 text-black font-raleway font-medium sticky top-0">
+    <header className=" bg-blue-50 text-black font-raleway font-medium  ">
       <nav className="max-w-8xl mx-auto px-6 ">
         <div className="flex justify-between items-center h-20">
           <div className="w-28 h-full">

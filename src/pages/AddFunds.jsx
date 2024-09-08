@@ -18,13 +18,13 @@ export default function AddFunds() {
         >
           Mininum amount to fund is N1000
         </p>
-        <button className="py-3 px-12 font-medium text-lg shadow-md  bg-blue-600 text-white">
+        <button className="py-3 px-12 font-medium text-lg shadow-md rounded-md  bg-blue-600 text-white">
           Pay
         </button>
       </div>
 
       <div className="bg-white mt-5 rounded-lg ">
-        <div className="flex justify-between py-2 px-28 rounded-t-lg mx-auto bg-blue-500 text-white font-semibold ">
+        <div className="flex justify-between py-2 px-10 lg:px-20 rounded-t-lg mx-auto bg-blue-500 text-white font-semibold ">
           <div>ID</div>
           <div>Date</div>
           <div>Amount</div>
@@ -34,11 +34,11 @@ export default function AddFunds() {
           {transactions.map((trans, index) => (
             <ul
               key={index}
-              className="flex justify-between jus px-24 py-3 space-y-4  items-center "
+              className="flex justify-between  text-sm  px-5 py-3 space-y-4 lg:px-20 items-center "
             >
               <li>{trans.id}</li>
-              <li className="text-left">{trans.dateTime}</li>
-              <li className=" justify-self-start">
+              <li className=" ">{trans.dateTime}</li>
+              <li className="justify-self-start text-left">
                 NGN {trans.transactionAmount}
               </li>
             </ul>
