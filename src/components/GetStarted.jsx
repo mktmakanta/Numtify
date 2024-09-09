@@ -42,7 +42,7 @@ const services = [
 
 export default function GetStarted() {
   return (
-    <section className="bg-blue-200 font-raleway p-4 pb-12">
+    <section className="bg-blue-200 font-raleway p-4 pb-12 lg:pb-60">
       <div className="wrapper text-center ">
         <h1 className="font-bold text-3xl mt-10">Get started</h1>
         <p className="my-5">
@@ -50,7 +50,7 @@ export default function GetStarted() {
           service!
         </p>
 
-        <div className="container px-6">
+        <div className="container px-6 lg:flex">
           {services.map((service, index) => (
             <div
               key={index}
@@ -58,11 +58,11 @@ export default function GetStarted() {
             >
               <div
                 style={{ background: `${service.color}` }}
-                className="min-w-16 max-w-16 h-16 flex justify-center items-center rounded-full col-span-1"
+                className="min-w-16 max-w-16 lg:gap-4 h-16 flex justify-center items-center rounded-full col-span-1"
               >
                 {" "}
                 <img
-                  className="w-8"
+                  className="w-8 lg:w-6"
                   src={`src/assets/icons/${service.image}.svg`}
                   alt=""
                 />

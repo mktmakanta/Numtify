@@ -2,7 +2,7 @@ import React from "react";
 
 export default function HeroServices() {
   return (
-    <div className="services p-5 font-raleway">
+    <div className="services p-5 lg:py-10 font-raleway lg:grid grid-cols-3 gap-4">
       <div className="service bg-blue-50/60  p-5 rounded-lg pb-16 my-5">
         <div className="my-3">
           <img className="w-12" src="src/assets/icons/quality.svg" alt="" />

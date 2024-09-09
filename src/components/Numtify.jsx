@@ -79,7 +79,7 @@ export default function Numtify() {
         </nav>
 
         {/* hero  */}
-        <section className="p-4 pt-14 ">
+        <section className="p-4 pt-14 lg:pb-16 lg:px-16 lg:grid grid-cols-2 ">
           <div className="hero-description">
             <h1 className="text-6xl font-bold leading-snug ">
               The Best Online SMS Verification Service
@@ -103,7 +103,7 @@ export default function Numtify() {
               </button>
             </div>
           </div>
-          <div className="hero-image  mt-7 mx-auto">
+          <div className="hero-image  mt-7 lg:mt-0 lg:w-4/6  mx-auto">
             <img
               className=" w-full h-full "
               src="src/assets/images/hero-image.png"

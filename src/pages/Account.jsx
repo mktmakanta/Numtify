@@ -10,7 +10,7 @@ export default function Account() {
           type="email"
           value="admin@gmail.com"
         />
-        <button className="px-6 py-3 font-semibold rounded-md border border-gray-300 bg-blue-600 text-white">
+        <button className="px-6 py-3 font-semibold rounded-sm border border-gray-300 bg-blue-500  hover:bg-blue-600 text-white">
           Change email
         </button>
       </div>
@@ -27,7 +27,7 @@ export default function Account() {
           type="password"
           value=""
         />
-        <button className=" px-3 lg:px-6 py-3 font-semibold rounded-md border border-gray-300 bg-blue-600 text-white">
+        <button className=" px-3 lg:px-6 py-3 font-semibold rounded-sm border border-gray-300 bg-blue-500  hover:bg-blue-600 text-white">
           Change Password
         </button>
       </div>

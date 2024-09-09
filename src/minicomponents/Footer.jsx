@@ -4,7 +4,7 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="p-5 font-raleway">
+    <footer className="p-5 font-raleway lg:py-16 lg:pb-60">
       <div className="wrapper flex justify-between">
         <div>
           <img className="w-16" src="src/assets/icons/numtify.svg" alt="" />

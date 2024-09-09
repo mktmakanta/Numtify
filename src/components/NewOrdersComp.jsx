@@ -127,7 +127,7 @@ export default function NewOrdersComp() {
         <button
           type="submit"
           disabled={!selectedService || !selectedCountry} // Disable until both service and country are selected
-          className="mb-5 bg-blue-500 text-white py-2 px-14 rounded-sm hover:bg-blue-600 transition duration-200"
+          className="mb-5 bg-blue-500 text-white py-2 px-10 rounded-sm hover:bg-blue-600 transition duration-200"
         >
           Submit
         </button>
