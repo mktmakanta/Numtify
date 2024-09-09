@@ -7,7 +7,7 @@ export default function UserLayout() {
   return (
     <>
       <Nav />
-      <section className=" md:grid grid-cols-10 bg-sky-100 h-screen ">
+      <section className=" md:grid grid-cols-10 bg-sky-100  min-h-screen pb-14 ">
         <div className="hidden md:block   lg:col-span-2">
           <Sidebar />
         </div>

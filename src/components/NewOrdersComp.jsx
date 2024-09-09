@@ -44,12 +44,12 @@ export default function NewOrdersComp() {
   const handleSubmit = (e) => {
     e.preventDefault();
     alert(
-      `Service: ${selectedService}, Country: ${selectedCountry}, Price: ${currentPrice}, Remaining: ${currentRemaining}`
+      `Service: ${selectedService}, Country: ${selectedCountry}, Price: ${currentPrice}, Total order: "1"`
     );
   };
 
   return (
-    <div className="w-full mt-8 p-6 bg-gray-100 rounded-md shadow-md font-raleway">
+    <div className=" p-6 mt-5 bg-gray-100 rounded-md shadow-md font-raleway">
       <div className="text-red-600 text-sm font-light mt-3 mb-5">
         Search for a service in the search box
       </div>
@@ -85,12 +85,7 @@ export default function NewOrdersComp() {
             onChange={handleCountryChange}
             className="w-full px-3 py-3.5 focus:outline  outline-blue-600 rounded-md"
           >
-            <option
-              className="text-sm font-thin"
-              value={selectedCountry}
-              selected
-              hidden
-            >
+            <option className="text-sm font-thin" value=" " selected hidden>
               USA
             </option>
             {selectedService &&

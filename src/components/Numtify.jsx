@@ -81,7 +81,7 @@ export default function Numtify() {
         {/* hero  */}
         <section className="p-4 pt-14 lg:pb-16 lg:px-16 lg:grid grid-cols-2 ">
           <div className="hero-description">
-            <h1 className="text-6xl font-bold leading-snug ">
+            <h1 className="text-6xl font-bold leading-tight lg:leading-normal ">
               The Best Online SMS Verification Service
             </h1>
             <p className="my-6">
@@ -90,7 +90,7 @@ export default function Numtify() {
             </p>
             <div className="h-14 w-full  ">
               <input
-                className="h-full w-2/3 rounded-l-sm focus:outline-blue-300 focus:outline-4 px-2 caret-slate-400"
+                className="h-full w-2/3  p-3  ring-1 rounded-sm  focus:outline outline-blue-700 ring-neutral-200 "
                 placeholder="Enter Email Address"
                 type="email"
               />{" "}

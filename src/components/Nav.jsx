@@ -34,14 +34,18 @@ export default function Nav() {
           </div>
 
           <div className="md:hidden flex items-center z-30">
-            <div className=" bg-blue-500 text-white h-full px-6 py-7 mr-4">
-              NGN 857
-            </div>
+            {isOpen ? (
+              ""
+            ) : (
+              <div className=" bg-blue-500 text-white h-full px-6 py-7 mr-4">
+                NGN 857
+              </div>
+            )}
             <button onClick={toggleMenu}>
               {isOpen ? (
-                <CloseIcon className="text-2xl" />
+                <CloseIcon className="text-2xl z-40" />
               ) : (
-                <HambugerIcon className="text-4xl" />
+                <HambugerIcon className="text-4xl z-40" />
               )}
             </button>
           </div>
@@ -49,34 +53,49 @@ export default function Nav() {
 
         {isOpen && (
           <div
-            className="md:hidden absolute bg-white right-0 w-1/2 text-center pt-28 font-medium h-screen  top-0 space-y-5
+            className="md:hidden absolute bg-white right-0 w-1/2 text-center pt-28 font-medium h-screen z-20 top-0 space-y-5
         "
           >
             <NavLink
+              onClick={() => {
+                setIsOpen(fasle);
+              }}
               to="/user"
               className="block px-2 py-2 text-sm hover:bg-blue-500 hover:text-white"
             >
               Order Number
             </NavLink>
             <NavLink
+              onClick={() => {
+                setIsOpen(fasle);
+              }}
               to="orders"
               className="block px-2 py-2 text-sm hover:bg-blue-500  hover:text-white"
             >
               View Orders
             </NavLink>
             <NavLink
+              onClick={() => {
+                setIsOpen(fasle);
+              }}
               to="addfunds"
               className="block px-2 py-2 text-sm hover:bg-blue-500  hover:text-white"
             >
               Add funds
             </NavLink>
             <NavLink
+              onClick={() => {
+                setIsOpen(fasle);
+              }}
               to="account"
               className="block px-2 py-2 text-sm hover:bg-blue-500  hover:text-white"
             >
               Account
             </NavLink>
             <NavLink
+              onClick={() => {
+                setIsOpen(fasle);
+              }}
               to="/"
               className="block px-2 py-2 text-sm hover:bg-blue-500  hover:text-white"
             >

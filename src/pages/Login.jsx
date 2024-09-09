@@ -16,7 +16,7 @@ export default function Login() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (formData.username === "admin" && formData.password === "admin") {
+    if (formData.username && formData.password) {
       navigate("/user");
     } else {
       setError("Invalid credentials");
@@ -24,10 +24,10 @@ export default function Login() {
   };
 
   return (
-    <div className="font-raleway min-h-screen bg-blue-200 ">
+    <div className="font-raleway min-h-screen bg-blue-200">
       <LoginSignUpNav />
       <div className="p-5">
-        <div className="w-full mx-auto top-28 relative max-w-xl p-8 bg-white rounded-lg shadow-lg ">
+        <div className="w-full mx-auto top-28 relative max-w-xl p-8 bg-white rounded-lg shadow-lg z-0">
           <h2 className="text-2xl font-semibold mb-4">Login to your account</h2>
           <div>
             Don't have an account?{" "}
@@ -63,13 +63,11 @@ export default function Login() {
               />
             </div>
 
-            {/* Error Handling */}
-            {error && <p className="text-red-500 text-sm">{error}</p>}
+            {error && <p className="text-red-500 text-sm my-2">{error}</p>}
 
-            {/* Submit Button */}
             <button
               type="submit"
-              className="px-10 bg-blue-500 text-white py-2 rounded-sm hover:bg-blue-600 transition duration-200"
+              className="px-10 bg-blue-500 text-white py-2 rounded-sm  transition duration-200"
             >
               Login
             </button>
