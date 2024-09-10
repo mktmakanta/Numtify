@@ -94,7 +94,7 @@ export default function SignUp() {
 
             <button
               type="submit"
-              className="px-10 mt-2 bg-blue-500 text-white py-2 rounded-sm hover:bg-blue-600 transition duration-200"
+              className="px-10 mt-2 bg-blue-500 text-white py-2 rounded-sm hover:bg-blue-600 transition duration-300"
             >
               Sign Up
             </button>

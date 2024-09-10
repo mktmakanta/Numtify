@@ -18,7 +18,7 @@ export default function AddFunds() {
         >
           Mininum amount to fund is N1000
         </p>
-        <button className="py-2 px-12 font-medium text-lg shadow-md rounded-sm  bg-blue-500  hover:bg-blue-600 text-white">
+        <button className="py-2 px-12 font-medium text-lg shadow-md rounded-sm  bg-blue-500  hover:bg-blue-600 transition duration-300 text-white">
           Pay
         </button>
       </div>

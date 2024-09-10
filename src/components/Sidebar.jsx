@@ -4,10 +4,10 @@ import { NavLink } from "react-router-dom";
 export default function Sidebar() {
   return (
     <aside className="font-raleway bg-gradient-to-r from-blue-500 to-sky-400 bg-cover h-screen text-white ">
-      <div className="flex flex-col pt-10 px-5 space-y-6 font-semibold text-xl">
+      <div className="flex flex-col pt-10 px-5 space-y-6 font-semibold text-xl transition duration-300">
         <NavLink
           className={({ isActive }) =>
-            `block px-5 py-3 rounded-lg text-sm hover:bg-white hover:text-blue-500 ${
+            `block px-5 py-3 rounded-lg text-sm hover:bg-white transition hover:text-blue-500 ${
               isActive && location.pathname === "/user"
                 ? "text-blue-400 bg-white"
                 : "text-white"

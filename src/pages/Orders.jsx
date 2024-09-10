@@ -27,7 +27,7 @@ export default function Orders() {
                 <td class="pr-3 py-2">
                   <NavLink
                     to={`/user/orders/${order.id}`}
-                    className=" inline-block rounded-sm px-5 py-2 bg-blue-500  hover:bg-blue-600 text-white"
+                    className=" inline-block rounded-sm px-5 py-2 bg-blue-500  hover:bg-blue-600 transition duration-300 text-white"
                   >
                     View
                   </NavLink>

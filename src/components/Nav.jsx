@@ -14,20 +14,20 @@ export default function Nav() {
     <header className=" bg-blue-50 text-black font-raleway font-medium  ">
       <nav className="max-w-8xl mx-auto px-6 ">
         <div className="flex justify-between items-center h-20">
-          <div className="w-28 h-full">
+          <NavLink to="/user" className="w-28 min-w-24 h-full">
             <img
               className="w-full h-full"
               src="src/assets/icons/numtify.svg"
               alt="Numtify logo"
             />
-          </div>
+          </NavLink>
           <div className="hidden md:flex gap-12 items-center">
             <div className=" bg-blue-500 text-white h-full px-12 py-7">
               NGN 857
             </div>
             <NavLink
               to="/"
-              className=" mr-10 text-blue-600 font-medium px-9 py-2 rounded-md"
+              className=" mr-10 text-blue-600 hover:text-blue-400 transition duration-300 font-medium px-9 py-2 rounded-md"
             >
               Logout
             </NavLink>
@@ -61,7 +61,7 @@ export default function Nav() {
                 setIsOpen(fasle);
               }}
               to="/user"
-              className="block px-2 py-2 text-sm hover:bg-blue-500 hover:text-white"
+              className="block px-2 py-2 text-sm hover:bg-blue-500 transition duration-300 hover:text-white"
             >
               Order Number
             </NavLink>
@@ -70,7 +70,7 @@ export default function Nav() {
                 setIsOpen(fasle);
               }}
               to="orders"
-              className="block px-2 py-2 text-sm hover:bg-blue-500  hover:text-white"
+              className="block px-2 py-2 text-sm hover:bg-blue-500 transition duration-300  hover:text-white"
             >
               View Orders
             </NavLink>
@@ -79,7 +79,7 @@ export default function Nav() {
                 setIsOpen(fasle);
               }}
               to="addfunds"
-              className="block px-2 py-2 text-sm hover:bg-blue-500  hover:text-white"
+              className="block px-2 py-2 text-sm hover:bg-blue-500 transition duration-300  hover:text-white"
             >
               Add funds
             </NavLink>
@@ -88,7 +88,7 @@ export default function Nav() {
                 setIsOpen(fasle);
               }}
               to="account"
-              className="block px-2 py-2 text-sm hover:bg-blue-500  hover:text-white"
+              className="block px-2 py-2 text-sm hover:bg-blue-500 transition duration-300 hover:text-white"
             >
               Account
             </NavLink>
@@ -97,7 +97,7 @@ export default function Nav() {
                 setIsOpen(fasle);
               }}
               to="/"
-              className="block px-2 py-2 text-sm hover:bg-blue-500  hover:text-white"
+              className="block px-2 py-2 text-sm hover:bg-blue-500 transition duration-300 hover:text-white"
             >
               Logout
             </NavLink>

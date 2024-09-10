@@ -1,7 +1,7 @@
 import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Numtify from "../components/Numtify";
-import NotFound from "../minicomponents/NotFound";
+import NotFound from "./NotFound";
 import UserLayout from "./UserLayout";
 import Login from "./Login";
 import Account from "./Account";
@@ -10,6 +10,7 @@ import Orders from "./Orders";
 import NewOrders from "./NewOrders";
 import SignUp from "./SignUp";
 import OrderDetails from "./OrderDetails";
+import ContactSection from "./Contact";
 
 export default function Layout() {
   const router = createBrowserRouter([
@@ -24,6 +25,10 @@ export default function Layout() {
     {
       path: "signup",
       element: <SignUp />,
+    },
+    {
+      path: "contact",
+      element: <ContactSection />,
     },
 
     {

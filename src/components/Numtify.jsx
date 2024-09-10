@@ -17,29 +17,35 @@ export default function Numtify() {
       <header className=" bg-blue-200 text-black font-raleway font-medium">
         <nav className="max-w-8xl mx-auto px-6 ">
           <div className="flex justify-between items-center h-20">
-            <div className="w-28 h-full">
+            <NavLink to="/" className="w-28 h-full">
               <img
                 className="w-full h-full"
                 src="src/assets/icons/numtify.svg"
                 alt="Numtify logo"
               />
-            </div>
+            </NavLink>
             <div className="hidden md:flex gap-20 items-center">
-              <a href="/" className="">
+              <NavLink
+                to="/contact"
+                className="hover:text-blue-400 transition duration-300"
+              >
                 Contact Us
-              </a>
-              <NavLink to="login" className="">
+              </NavLink>
+              <NavLink
+                to="/login"
+                className="hover:text-blue-400 transition duration-300"
+              >
                 Login
               </NavLink>
               <NavLink
-                to="signup"
-                className=" mr-10 bg-blue-600 text-white px-9 py-2 rounded-md"
+                to="/signup"
+                className=" mr-10 bg-blue-500 hover:bg-blue-600 transition duration-300 text-white px-9 py-2 rounded-md"
               >
                 Sign Up
               </NavLink>
             </div>
 
-            <div className="md:hidden flex items-center z-30">
+            <div className="md:hidden flex items-center z-40">
               <button onClick={toggleMenu}>
                 {isOpen ? (
                   <CloseIcon className="text-2xl" />
@@ -53,24 +59,24 @@ export default function Numtify() {
           {/* mobile */}
           {isOpen && (
             <div
-              className="md:hidden absolute bg-white right-0 w-1/2 text-center pt-28 font-medium h-full  top-0 space-y-5
+              className="md:hidden absolute bg-white right-0 w-1/2 text-center pt-28 font-medium h-full z-30 top-0 space-y-5
             "
             >
-              <a
-                href="/about"
-                className="block px-2 py-2 text-sm hover:bg-blue-500 hover:text-white"
+              <NavLink
+                to="/contact"
+                className="block px-2 py-2 text-sm hover:bg-blue-500 transition duration-300 hover:text-white"
               >
                 Contact Us
-              </a>
+              </NavLink>
               <NavLink
-                to="login"
-                className="block px-2 py-2 text-sm hover:bg-blue-500  hover:text-white"
+                to="/login"
+                className="block px-2 py-2 text-sm hover:bg-blue-500 transition duration-300 hover:text-white"
               >
                 Login
               </NavLink>
               <NavLink
-                to="signup"
-                className="block px-2 py-2 text-sm hover:bg-blue-500  hover:text-white"
+                to="/signup"
+                className="block px-2 py-2 text-sm hover:bg-blue-500 transition duration-300 hover:text-white"
               >
                 Sign Up
               </NavLink>
@@ -95,7 +101,7 @@ export default function Numtify() {
                 type="email"
               />{" "}
               <button
-                className="h-full px-5 py-2 bg-blue-500 rounded-r-sm text-white"
+                className="h-full px-5 py-2 bg-blue-500 hover:bg-blue-600 transition duration-300 ho rounded-r-sm text-white"
                 type="submit"
               >
                 {" "}

@@ -15,23 +15,29 @@ export default function LoginSignUpNav() {
     <>
       <nav className="max-w-8xl mx-auto px-6 ">
         <div className="flex justify-between items-center h-20">
-          <div className="w-28 h-full">
+          <NavLink to="/" className="w-28 h-full">
             <img
               className="w-full h-full"
               src="src/assets/icons/numtify.svg"
               alt="Numtify logo"
             />
-          </div>
-          <div className="hidden md:flex gap-20 items-center">
-            <a href="/" className="">
+          </NavLink>
+          <div className="hidden font-medium md:flex gap-20 items-center">
+            <NavLink
+              to="/contact"
+              className="hover:text-blue-400 transition duration-300"
+            >
               Contact Us
-            </a>
-            <NavLink to="/login" className="">
+            </NavLink>
+            <NavLink
+              to="/login"
+              className="hover:text-blue-400 transition duration-300"
+            >
               Login
             </NavLink>
             <NavLink
               to="/signup"
-              className=" mr-10 bg-blue-600 text-white px-9 py-2 rounded-md"
+              className=" mr-10 bg-blue-500 hover:bg-blue-600 transition duration-300 text-white px-9 py-2 rounded-md"
             >
               Sign Up
             </NavLink>
@@ -48,27 +54,35 @@ export default function LoginSignUpNav() {
           </div>
         </div>
 
-        {/* mobile */}
         {isOpen && (
           <div
-            className="md:hidden absolute bg-white right-0 w-1/2 text-center pt-28 font-medium h-full  top-0 space-y-5
+            className="md:hidden absolute  bg-white right-0 w-1/2 text-center pt-28 font-medium h-full z-20 top-0 space-y-5
             "
           >
-            <a
-              href="/about"
-              className="block px-2 py-2 text-sm hover:bg-blue-500 hover:text-white"
+            <NavLink
+              onClick={() => {
+                setIsOpen(false);
+              }}
+              to="/contact"
+              className="block px-2 py-2 text-sm transition duration-300 hover:bg-blue-500 hover:text-white"
             >
               Contact Us
-            </a>
+            </NavLink>
             <NavLink
-              to="login"
-              className="block px-2 py-2 text-sm hover:bg-blue-500  hover:text-white"
+              onClick={() => {
+                setIsOpen(false);
+              }}
+              to="/login"
+              className="block px-2 py-2 text-sm transition duration-300 hover:bg-blue-500  hover:text-white"
             >
               Login
             </NavLink>
             <NavLink
-              to="signup"
-              className="block px-2 py-2 text-sm hover:bg-blue-500  hover:text-white"
+              onClick={() => {
+                setIsOpen(false);
+              }}
+              to="/signup"
+              className="block px-2 py-2 text-sm  transition duration-300 hover:bg-blue-500  hover:text-white"
             >
               Sign Up
             </NavLink>
