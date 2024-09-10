@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import LoginSignUpNav from "../minicomponents/AuthNav";
+
+import AuthNav from "../minicomponents/AuthNav";
 
 export default function ContactSection() {
   const [formData, setFormData] = useState({
@@ -25,7 +26,7 @@ export default function ContactSection() {
 
   return (
     <section className="bg-blue-200 font-raleway  min-h-screen">
-      <LoginSignUpNav />
+      <AuthNav />
       <div className=" p-5 mt-10">
         <div className="max-w-3xl mx-auto bg-white p-8 shadow-lg rounded-lg">
           <h2 className="text-3xl font-bold text-center mb-4">Contact Us</h2>

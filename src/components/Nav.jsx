@@ -17,7 +17,7 @@ export default function Nav() {
           <NavLink to="/user" className="w-28 min-w-24 h-full">
             <img
               className="w-full h-full"
-              src="src/assets/icons/numtify.svg"
+              src="numtify.svg"
               alt="Numtify logo"
             />
           </NavLink>

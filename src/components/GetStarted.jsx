@@ -63,7 +63,7 @@ export default function GetStarted() {
                 {" "}
                 <img
                   className="w-8 lg:w-6"
-                  src={`src/assets/icons/${service.image}.svg`}
+                  src={`/icons/${service.image}.svg`}
                   alt=""
                 />
               </div>

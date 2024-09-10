@@ -8,7 +8,7 @@ export default function NewOrders() {
         <div className=" rounded-md  w-full  relative">
           <video
             className="rounded-md h-full w-full z-0 object-cover"
-            src="src/assets/verification.mp4"
+            src="verification.mp4"
             controls
           ></video>
         </div>

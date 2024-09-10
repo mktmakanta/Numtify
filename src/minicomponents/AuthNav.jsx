@@ -18,7 +18,7 @@ export default function AuthNav() {
           <NavLink to="/" className="w-28 h-full">
             <img
               className="w-full h-full"
-              src="src/assets/icons/numtify.svg"
+              src="numtify.svg"
               alt="Numtify logo"
             />
           </NavLink>

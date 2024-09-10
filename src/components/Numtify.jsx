@@ -20,7 +20,7 @@ export default function Numtify() {
             <NavLink to="/" className="w-28 h-full">
               <img
                 className="w-full h-full"
-                src="src/assets/icons/numtify.svg"
+                src="/numtify.svg"
                 alt="Numtify logo"
               />
             </NavLink>
@@ -112,7 +112,7 @@ export default function Numtify() {
           <div className="hero-image  mt-7 lg:mt-0 lg:w-4/6  mx-auto">
             <img
               className=" w-full h-full "
-              src="src/assets/images/hero-image.png"
+              src="hero-image.png"
               alt="hero image"
             />
           </div>
