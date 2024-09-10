@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
-import LoginSignUpNav from "../minicomponents/LoginSignUpNAv";
+import AuthNav from "../minicomponents/AuthNav";
 
 export default function SignUp() {
   const [formData, setFormData] = useState({
@@ -28,7 +28,7 @@ export default function SignUp() {
 
   return (
     <div className="font-raleway min-h-screen bg-blue-200">
-      <LoginSignUpNav />
+      <AuthNav />
       <div className="p-5">
         <div className="w-full mx-auto top-5  lg:top-28 relative max-w-xl p-8 bg-white rounded-lg shadow-lg">
           <h2 className="text-2xl font-semibold mb-4">Create an account</h2>

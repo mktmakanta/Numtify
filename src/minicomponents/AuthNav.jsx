@@ -1,10 +1,10 @@
 import React from "react";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import CloseIcon from "../minicomponents/CloseIcon";
-import HambugerIcon from "../minicomponents/HambugerIcon";
+import CloseIcon from "./CloseIcon";
+import HambugerIcon from "./HambugerIcon";
 
-export default function LoginSignUpNav() {
+export default function AuthNav() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
-import LoginSignUpNav from "../minicomponents/LoginSignUpNAv";
-
+import AuthNav from "../minicomponents/AuthNav";
 export default function Login() {
   const [formData, setFormData] = useState({
     username: "",
@@ -25,7 +24,7 @@ export default function Login() {
 
   return (
     <div className="font-raleway min-h-screen bg-blue-200">
-      <LoginSignUpNav />
+      <AuthNav />
       <div className="p-5">
         <div className="w-full mx-auto top-28 relative max-w-xl p-8 bg-white rounded-lg shadow-lg z-10">
           <h2 className="text-2xl font-semibold mb-4">Login to your account</h2>
@@ -67,7 +66,7 @@ export default function Login() {
 
             <button
               type="submit"
-              className="px-10 bg-blue-500 hover:bg-blue-600 transition duration-300 text-white py-2 rounded-sm  transition duration-200"
+              className="px-10 bg-blue-500 hover:bg-blue-600 transition duration-300 text-white py-2 rounded-sm  "
             >
               Login
             </button>

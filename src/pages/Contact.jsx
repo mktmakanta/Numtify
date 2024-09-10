@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import LoginSignUpNav from "../minicomponents/LoginSignUpNAv";
+import LoginSignUpNav from "../minicomponents/AuthNav";
 
 export default function ContactSection() {
   const [formData, setFormData] = useState({
@@ -72,7 +72,7 @@ export default function ContactSection() {
 
             <button
               type="submit"
-              className="  hover:bg-blue-600 px-10 bg-blue-500 text-white py-2 rounded-sm  transition duration-200"
+              className="  hover:bg-blue-600 px-10 bg-blue-500 text-white py-2 rounded-sm  transition duration-300"
             >
               Send Message
             </button>
