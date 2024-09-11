@@ -25,8 +25,8 @@ export default function Login() {
   return (
     <div className="font-raleway min-h-screen bg-blue-200">
       <AuthNav />
-      <div className="p-5">
-        <div className="w-full mx-auto top-28 relative max-w-xl p-8 bg-white rounded-lg shadow-lg z-10">
+      <div className="p-5 h-full w-full ">
+        <div className="w-full mx-auto md:top-40 top-28 lg:top-32 relative max-w-xl p-8 bg-white rounded-lg shadow-lg z-10">
           <h2 className="text-2xl font-semibold mb-4">Login to your account</h2>
           <div>
             Don't have an account?{" "}

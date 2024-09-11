@@ -50,7 +50,7 @@ export default function GetStarted() {
           service!
         </p>
 
-        <div className="container px-6 lg:flex">
+        <div className="container px-6 lg:grid-cols-4 md:grid grid-cols-2 gap-10">
           {services.map((service, index) => (
             <div
               key={index}

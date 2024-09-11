@@ -14,7 +14,7 @@ export default function Numtify() {
   };
   return (
     <>
-      <header className=" bg-blue-200 text-black font-raleway font-medium">
+      <header className=" bg-blue-200 text-black font-raleway font-medium ">
         <nav className="max-w-8xl mx-auto px-6 ">
           <div className="flex justify-between items-center h-20">
             <NavLink to="/" className="w-28 h-full">
